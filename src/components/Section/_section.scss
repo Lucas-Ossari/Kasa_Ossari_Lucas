@@ -1,0 +1,49 @@
+.section_container {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+
+  min-width: 400px;
+  max-width: 1800px;
+  height: 223px;
+  width: 100%;
+  overflow: hidden;
+
+  margin: 0 auto;
+
+  border-radius: 25px;
+
+  @include verticalCenter;
+}
+
+.section_container.section_accueil {
+  background-image: url("../../img/section.png");
+}
+.section_container.section_about {
+  background-image: url("../../img/section-about.png");
+}
+.section_container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3rem;
+  color: $blanc;
+  font-weight: lighter;
+  font-family: $font-1;
+  font-weight: 500;
+
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.section_container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}

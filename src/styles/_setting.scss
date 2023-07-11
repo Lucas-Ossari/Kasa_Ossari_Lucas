@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Montserrat";
+
+  src: url("../../public/Montserrat-VariableFont_wght.ttf");
+}
+
+$font-1: "Montserrat", sans-serif;
+$font-2: "Literata";
+
+$color-1: #fff3e0;
+$color-2: #ff6060;
+$color-3: #f7f7f7;
+
+$noir: #000000;
+$blanc: #ffffff;
+
+$degrade-1: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 0, 0, 0.5) 100%
+);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin raw {
+  display: flex;
+  flex-direction: row;
+}
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding: 5% 10% 0% 10%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-1;
+}
+
+body {
+  background: $blanc;
+  font-family: $font-1;
+}
+nav ul a {
+  list-style-type: none;
+  text-decoration: none;
+
+  color: $color-2;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-1;
+  font-size: 10rem;
+  color: #ff6060;
+}
+
+.error-container h2,
+.error-container a {
+  font-size: 1.9rem;
+  margin: 2rem;
+  color: $color-2;
+  padding: 1rem;
+}

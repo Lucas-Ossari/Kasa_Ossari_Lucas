@@ -1,0 +1,17 @@
+.footer-container {
+  background-color: $noir;
+
+  height: 100%;
+  width: 100%;
+
+  margin-top: 20px;
+  @include verticalCenter;
+  @include column;
+
+  padding: 20px;
+  gap: 20px;
+}
+
+.footer-container p {
+  color: $blanc;
+}

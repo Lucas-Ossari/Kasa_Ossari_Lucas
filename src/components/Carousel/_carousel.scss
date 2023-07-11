@@ -1,0 +1,75 @@
+.carousel-container {
+  position: relative;
+  height: 25rem;
+  width: auto;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.carousel-img,
+.carousel-content,
+.carousel-nav-arrow {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.carousel-img img {
+  display: block;
+  object-fit: contain;
+
+  min-width: 100rem;
+}
+
+// nav
+.carousel-nav-arrow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.carousel-nav-arrow-right svg,
+.carousel-nav-arrow-left svg {
+  position: absolute;
+
+  height: 5rem;
+  fill: $blanc;
+  cursor: pointer;
+}
+
+.carousel-nav-arrow-right,
+.carousel-nav-arrow-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-nav-arrow-left {
+  justify-content: flex-start;
+}
+.carousel-nav-arrow-right {
+  justify-content: flex-end;
+}
+.carousel-nav {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.carousel-counter {
+  font-size: 1.2rem;
+  color: $blanc;
+  padding: 1rem;
+}
